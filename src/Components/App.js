@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import logo from '../assets/img/logo.png';
 import '../assets/css/App.css';
+import Header from './Common/Header';
+import NavBar from './Common/NavBar';
+import Home from './Pages/Home/Home';
+import Footer from './Common/Footer';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Welcome to PLBPP ( NON GraphQL )
-          </p>
-          
-        </header>
+      <div>
+        <Header />
+        <NavBar />
+        <Home />
+        <Footer />
       </div>
     );
   }
