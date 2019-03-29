@@ -16,7 +16,7 @@ const MyRouter = () => {
       <div className="wrapper">
         <Switch>
           <Route exact={true} path="/" component={App} />
-          <Route exact={true} path="/pbb" component={Eprocurement} />
+          <Route exact={true} path="/e-procurement" component={Eprocurement} />
         </Switch>
       </div>
     </Router>

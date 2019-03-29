@@ -13,7 +13,7 @@ export default class NavBar extends Component {
                 <li ><Link to="/about">About</Link></li>
                 <li ><Link to="/documents">Documents</Link></li>
                 <li ><Link to="/tender">Tenders</Link></li>
-                <li ><Link to="/pbb">e-Procurement</Link></li>
+                <li ><Link to="/e-procurement">e-Procurement</Link></li>
                 <li ><Link to="/open-contracting">Open Contracting</Link></li>
                 <li ><Link to="/media">Media</Link></li>
                 <li ><Link to="/">More</Link></li>
