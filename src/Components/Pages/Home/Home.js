@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
   render() {
@@ -9,20 +10,20 @@ export default class Home extends Component {
             <div className="news">Latest News</div>
             <ul className="uk-slideshow-items">
               <li>
-                <a href="#" className="p">Hello World</a>
+                <Link to="#" className="p">Hello World</Link>
               </li>
               <li>
-                <a href="#" className="p">Are We alright Folks</a>
+                <Link to="#" className="p">Are We alright Folks</Link>
               </li>
               <li>
-                <a href="#" className="p">
+                <Link to="#" className="p">
                   Breaking news, A Javascript bug killed a browser because a developer told it to console the bug infinitely.
-                </a>
+                </Link>
               </li>
             </ul>
 
-            <a className="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a className="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next uk-slideshow-item="next"></a>
+            <Link className="uk-position-center-left uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-previous uk-slideshow-item="previous"></Link>
+            <Link className="uk-position-center-right uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-next uk-slideshow-item="next"></Link>
 
           </div>        
           <div className="img-hover mt:20px active-1">
@@ -54,7 +55,7 @@ export default class Home extends Component {
                 STANDARD <br />
                 <span className="bold-green">BID DOCUMENTS</span>
               </h3>
-              <a href="#" className="theme-color">VIEW ALL</a>
+              <Link to="#" className="theme-color">VIEW ALL</Link>
             </div>
             <div className="link-docs">
               <div className="card-with-image">
@@ -62,7 +63,7 @@ export default class Home extends Component {
                   <h4 className="small-lh">
                     LAW OF<br /><span className="smaller">PROCUREMENT</span>
                   </h4>
-                  <a href="#" className="p">READ MORE</a>
+                  <Link to="#" className="p">READ MORE</Link>
                 </div>
                 <img src="./assets/img/law.png" alt="" />
               </div>
@@ -71,15 +72,15 @@ export default class Home extends Component {
                   <h4 className="small-lh">
                     GUIDELINES OF<br /><span className="smaller">PROCUREMENT</span>
                   </h4>
-                  <a href="#" className="p">READ MORE</a>
+                  <Link to="#" className="p">READ MORE</Link>
                 </div>
                 <img src="./assets/img/library.png" alt="" />
               </div>
               <div className="stacks-of-cards">
-                <a href="#" className="self-top">Standard Bidding Document for the Procurement of Works</a>
-                <a href="#" className="self-center">Standard Request for Proposals for the Selection of Consulting
-                            Firm</a>
-                <a href="#" className="self-bottom">Standard Bidding Document for the procurement of goods</a>
+                <Link to="#" className="self-top">Standard Bidding Document for the Procurement of Works</Link>
+                <Link to="#" className="self-center">Standard Request for Proposals for the Selection of Consulting
+                            Firm</Link>
+                <Link to="#" className="self-bottom">Standard Bidding Document for the procurement of goods</Link>
               </div>
             </div>
           </div>
@@ -106,7 +107,7 @@ export default class Home extends Component {
                   </div>
                 </div>
               </div>
-              <a href="#" className="btn">READ MORE</a>
+              <Link to="#" className="btn">READ MORE</Link>
             </div>
           </div>
           <div className="news-n-events mt:40px uk-child-width-1-3@m">
@@ -225,7 +226,7 @@ export default class Home extends Component {
                                   </div>
                                 </div>
                                 <div className="uk-width-1-1@s uk-flex  uk-flex-center mt:40px">
-                                  <a href="#" className="btn">LOAD MORE</a>
+                                  <Link to="#" className="btn">LOAD MORE</Link>
                                 </div>
                               </div>
                             </div>

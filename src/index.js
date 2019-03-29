@@ -4,7 +4,7 @@ import './assets/css/index.css';
 import App from './Components/App';
 import { createBrowserHistory } from 'history';
 import * as serviceWorker from './serviceWorker';
-import { Route, Redirect, Router } from "react-router-dom";
+import { Route, Router, Switch } from "react-router-dom";
 import Eprocurement from './Components/Pages/Procurement/Eprocurement';
 
 
@@ -14,10 +14,10 @@ const MyRouter = () => {
   return (
     <Router history={history}>
       <div className="wrapper">
-        <Route exact={true} path="/" component={App} />
-        <Route exact={true} path="/pbb" component={Eprocurement} />
-        
-        {/* <Route exact={true} path="/reset-password" component={ResetPassword} /> */}
+        <Switch>
+          <Route exact={true} path="/" component={App} />
+          <Route exact={true} path="/pbb" component={Eprocurement} />
+        </Switch>
       </div>
     </Router>
   );

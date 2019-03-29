@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class Summary extends Component {
   render() {
@@ -34,10 +34,10 @@ export default class Summary extends Component {
                       <div className="el-content-holder">
                         <p className="el-cardTitle">
                           TOTAL NUMBER OF PROJECTS
-                                        </p>
+                        </p>
                         <p className="el-cardFigure">
                           1024
-                                        </p>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -51,10 +51,10 @@ export default class Summary extends Component {
                       <div className="el-content-holder">
                         <p className="el-cardTitle">
                           TOTAL SUM OF PROJECTS
-                                        </p>
+                        </p>
                         <p className="el-cardFigure">
                           ₦ 45,091,199,582
-                                        </p>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -68,10 +68,10 @@ export default class Summary extends Component {
                       <div className="el-content-holder">
                         <p className="el-cardTitle">
                           HIGHEST CONTRACT AMOUNT
-                                        </p>
+                        </p>
                         <p className="el-cardFigure">
                           ₦ 2,283,102,632
-                                        </p>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -85,7 +85,7 @@ export default class Summary extends Component {
                       <div className="el-content-holder">
                         <p className="el-cardTitle">
                           LOWEST CONTRACT AMOUNT
-                                        </p>
+                        </p>
                         <p className="el-cardFigure">
                           ₦ 210,735
                         </p>

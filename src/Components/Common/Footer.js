@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Footer extends Component {
   render() {
@@ -24,18 +25,18 @@ export default class Footer extends Component {
         <div className="footer-nav">
           <h5 className="footer-title">LATEST NEWS</h5>
           <div className="uk-flex img-links">
-            <a href="#" className="img-link">
+            <Link className="img-link" to="">
               <img src="./assets/img/img-1.jpg" alt="" />
-            </a>
-            <a href="#" className="img-link">
+            </Link>
+            <Link className="img-link" to="">
               <img src="./assets/img/img-3.jpg" alt="" />
-            </a>
-            <a href="#" className="img-link">
+            </Link>
+            <Link className="img-link" to="">
               <img src="./assets/img/event-2.png" alt="" />
-            </a>
-            <a href="#" className="img-link">
+            </Link>
+            <Link className="img-link" to="">
               <img src="./assets/img/event-1.png" alt="" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="subfooter">

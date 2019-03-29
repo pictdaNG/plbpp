@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class FilterProject extends Component {
   render() {
@@ -168,16 +169,16 @@ export default class FilterProject extends Component {
               </table>
               <ul className="uk-pagination uk-flex-right uk-margin-medium-top" data-uk-margin >
                 <li>
-                  <a href="#"><span data-uk-pagination-previous></span></a>
+                  <Link to="#"><span data-uk-pagination-previous></span></Link>
                 </li>
-                <li><a href="#">1</a></li>
+                <li><Link to="#">1</Link></li>
                 <li className="uk-disabled"><span>...</span></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
+                <li><Link to="#">5</Link></li>
+                <li><Link to="#">6</Link></li>
                 <li className="uk-active"><span>7</span></li>
-                <li><a href="#">8</a></li>
+                <li><Link to="#">8</Link></li>
                 <li>
-                  <a href="#"><span data-uk-pagination-next></span></a>
+                  <Link to="#"><span data-uk-pagination-next></span></Link>
                 </li>
               </ul>
             </div>
