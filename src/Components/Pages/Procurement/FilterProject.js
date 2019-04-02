@@ -16,8 +16,8 @@ export default class FilterProject extends Component {
                   </label>
                   <div className="uk-form-controls">
                     <select className="uk-select" id="form-stacked-select">
-                      <option value="Health">Health</option
-                      ><option value="Construction">Construction</option>
+                      <option value="Health">Health</option>
+                      <option value="Construction">Construction</option>
                       <option value="Education">Education</option>
                       <option value="Finance">Finance</option>
                       <option value="Social Development">Social Development</option>
