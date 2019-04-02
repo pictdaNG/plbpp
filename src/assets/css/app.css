@@ -14822,10 +14822,11 @@ iframe.uk-cover {
           align-items: center; }
 
 .logo {
-  width: auto;
+  width: 100px;
   height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain; }
+  /* -o-object-fit: contain;
+     object-fit: contain;  */
+}
   @media only screen and (max-width: 37.5em) {
     .logo {
       width: 40%; } }
