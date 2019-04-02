@@ -19,7 +19,7 @@ export default class Home extends Component {
       let x = 0;
       let imgSlideInterval =  setInterval(()=> {
       
-        if (x==3){
+        if (x===3){
           x = 0
         }
         imgSliderContainer.setAttribute("class", `img-hover mt:20px ${classesArray[x]}`);
@@ -34,7 +34,7 @@ export default class Home extends Component {
       
         imgSlideInterval =  setInterval(()=> {
         
-          if (x==3){
+          if (x===3){
             x = 0
           }
           imgSliderContainer.setAttribute("class", `img-hover mt:20px ${classesArray[x]}`);
