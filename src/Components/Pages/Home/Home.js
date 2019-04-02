@@ -2,6 +2,48 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
+  
+  componentDidMount() {
+    let date = document.querySelector('.date');
+    let current = new Date();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    date.innerText = `${days[current.getDay()]}, ${months[current.getMonth()]} ${current.getDate()}, ${current.getFullYear()}`;
+// UIkit.notification('Are We Good');
+  
+    let imgSliderContainer = document.querySelector('.img-hover');
+    if (imgSliderContainer) {
+// let apd = pageYOffset.bind(this);
+// console.log(apd);
+      let classesArray = ['active-1','active-2','active-3'];
+      let x = 0;
+      let imgSlideInterval =  setInterval(()=> {
+      
+        if (x==3){
+          x = 0
+        }
+        imgSliderContainer.setAttribute("class", `img-hover mt:20px ${classesArray[x]}`);
+        x++;
+      },4000);
+    
+      imgSliderContainer.addEventListener('mouseenter', ()=>{
+        clearInterval(imgSlideInterval)
+      });
+    
+      imgSliderContainer.addEventListener('mouseleave', ()=>{
+      
+        imgSlideInterval =  setInterval(()=> {
+        
+          if (x==3){
+            x = 0
+          }
+          imgSliderContainer.setAttribute("class", `img-hover mt:20px ${classesArray[x]}`);
+          x++;
+        },4000);
+      });
+    }
+  }
+  
   render() {
     return (
       <section className="body">
