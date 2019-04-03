@@ -15512,3 +15512,10 @@ a:hover {
 .title span{
   font-size: 1.2rem;
 }
+
+.uk-open > .uk-offcanvas-bar{
+  background: #2b6142;
+}
+.uk-navbar-toggle:hover, .uk-navbar-toggle:focus, .uk-navbar-toggle.uk-open{
+  color: #ffffff;
+}
