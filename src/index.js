@@ -6,6 +6,7 @@ import { createBrowserHistory } from 'history';
 import * as serviceWorker from './serviceWorker';
 import { Route, Router, Switch } from "react-router-dom";
 import Eprocurement from './Components/Pages/Procurement/Eprocurement';
+import About from './Components/Pages/About';
 
 
 const history = createBrowserHistory();
@@ -17,6 +18,7 @@ const MyRouter = () => {
         <Switch>
           <Route exact={true} path="/" component={App} />
           <Route exact={true} path="/e-procurement" component={Eprocurement} />
+          <Route exact={true} path="/about" component={About} />
         </Switch>
       </div>
     </Router>

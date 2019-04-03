@@ -10,7 +10,7 @@ export default class NavBar extends Component {
             <div className="uk-navbar-left">
               <ul className="uk-navbar-nav">
                 <li className="uk-active"><Link to="/" >Home</Link></li>
-                {/* <li ><Link to="/about">About</Link></li> */}
+                <li ><Link to="/about">About Us</Link></li>
                 {/* <li ><Link to="/documents">Documents</Link></li> */}
                 {/* <li ><Link to="/tender">Tenders</Link></li> */}
                 <li ><Link to="/e-procurement">e-Procurement</Link></li>
