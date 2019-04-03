@@ -15519,3 +15519,7 @@ a:hover {
 .uk-navbar-toggle:hover, .uk-navbar-toggle:focus, .uk-navbar-toggle.uk-open{
   color: #ffffff;
 }
+
+.uk-nav li > a.uk-active{
+  color: #6dffad;
+}

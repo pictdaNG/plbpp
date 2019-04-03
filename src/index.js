@@ -6,9 +6,12 @@ import { createBrowserHistory } from 'history';
 import * as serviceWorker from './serviceWorker';
 import { Route, Router, Switch } from "react-router-dom";
 import Eprocurement from './Components/Pages/Procurement/Eprocurement';
-import About from './Components/Pages/About/index';
+import About from './Components/Pages/About/About';
 import SideNav from "./Components/Common/SideNav";
-import Mandate from "./Components/Pages/Mandate/index";
+import Mandate from "./Components/Pages/Mandate/Mandate";
+import Footer from "./Components/Common/Footer";
+import Header from "./Components/Common/Header";
+import NavBar from "./Components/Common/NavBar";
 
 
 const history = createBrowserHistory();
@@ -17,12 +20,15 @@ const MyRouter = () => {
   return (
     <Router history={history}>
       <div className="wrapper">
+        <Header />
+        <NavBar />
         <Switch>
           <Route exact={true} path="/" component={App} />
           <Route exact={true} path="/e-procurement" component={Eprocurement} />
           <Route exact={true} path="/about" component={About} />
           <Route exact={true} path="/mandate" component={Mandate} />
         </Switch>
+        <Footer/>
         <SideNav/>
       </div>
     </Router>

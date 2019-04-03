@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import DateView from "./Date";
 
 export default class Header extends Component {
+  
   render() {
     
     return (
@@ -15,7 +17,7 @@ export default class Header extends Component {
             </ul>
             <div className="currentDate">
               <span><img src="../assets/img/calender.png" alt="" /></span>
-              <span className="date"></span>
+              <DateView />
             </div>
           </div>
         </nav>    
