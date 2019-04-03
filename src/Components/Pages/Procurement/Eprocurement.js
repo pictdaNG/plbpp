@@ -9,7 +9,11 @@ import Chart from 'chart.js';
 export default class Eprocurement extends Component {
   
   componentDidMount() {
-  
+    let date = document.querySelector('.date');
+    let current = new Date();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    date.innerText = `${days[current.getDay()]}, ${months[current.getMonth()]} ${current.getDate()}, ${current.getFullYear()}`;
     var ctx = document.getElementById("myChart").getContext("2d");
     var ctx2 = document.getElementById("myChart2").getContext("2d");
     if (ctx || ctx2) {

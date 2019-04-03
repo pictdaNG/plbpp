@@ -22,7 +22,7 @@ export default class Home extends Component {
         if (x===3){
           x = 0
         }
-        imgSliderContainer.setAttribute("class", `img-hover mt:20px ${classesArray[x]}`);
+        imgSliderContainer.setAttribute("class", `img-hover ${classesArray[x]}`);
         x++;
       },4000);
     
@@ -48,27 +48,8 @@ export default class Home extends Component {
     return (
       <section className="body">
         <div className="dContainer">
-          <div className="uk-position-relative uk-visible-toggle" tabIndex="-1" data-uk-slideshow="min-height: 60; max-height: 60; autoplay: true">
-            <div className="news">Latest News</div>
-            <ul className="uk-slideshow-items">
-              <li>
-                <Link to="#" className="p">Hello World</Link>
-              </li>
-              <li>
-                <Link to="#" className="p">Are We alright Folks</Link>
-              </li>
-              <li>
-                <Link to="#" className="p">
-                  Breaking news, A Javascript bug killed a browser because a developer told it to console the bug infinitely.
-                </Link>
-              </li>
-            </ul>
-
-            <Link className="uk-position-center-left uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-previous uk-slideshow-item="previous"></Link>
-            <Link className="uk-position-center-right uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-next uk-slideshow-item="next"></Link>
-
-          </div>        
-          <div className="img-hover mt:20px active-1">
+                 
+          <div className="img-hover  active-1">
             <div className="img-1 uk-inline-clip uk-transition-toggle" tabIndex="0">
               <img src="./assets/img/img-1.jpg" alt="" />
               <div className="overlay uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary">
@@ -91,6 +72,26 @@ export default class Home extends Component {
               </div>
             </div>
           </div>
+          <div className="uk-position-relative uk-visible-toggle" tabIndex="-1" data-uk-slideshow="min-height: 60; max-height: 60; autoplay: true">
+            <div className="news">Latest News</div>
+            <ul className="uk-slideshow-items">
+              <li>
+                <Link to="#" className="p">Hello World</Link>
+              </li>
+              <li>
+                <Link to="#" className="p">Are We alright Folks</Link>
+              </li>
+              <li>
+                <Link to="#" className="p">
+                  Breaking news, A Javascript bug killed a browser because a developer told it to console the bug infinitely.
+                </Link>
+              </li>
+            </ul>
+
+            <Link className="uk-position-center-left uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-previous uk-slideshow-item="previous"></Link>
+            <Link className="uk-position-center-right uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-next uk-slideshow-item="next"></Link>
+
+          </div> 
           <div className="docs mt:20px">
             <div className="uk-flex uk-flex-between">
               <h3 className="uk-margin-remove small-lh">

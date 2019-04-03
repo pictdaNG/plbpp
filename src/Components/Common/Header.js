@@ -9,9 +9,9 @@ export default class Header extends Component {
         <nav id="topbar">
           <div className="nav-container">
             <ul>
-              <li><Link to=""><img src="../assets/img/facebook.png" alt="" /></Link></li>
-              <li><Link to=""><img src="../assets/img/twitter.png" alt="" /></Link></li>
-              <li><Link to=""><img src="../assets/img/instagram.png" alt="" /></Link></li>
+              <li><Link to=""><img src="../assets/img/facebook.png" alt="" style={{ width: '30px' }} /></Link></li>
+              <li><Link to=""><img src="../assets/img/twitter.png" alt="" style={{ width: '30px' }} /></Link></li>
+              <li><Link to=""><img src="../assets/img/instagram.png" alt="" style={{ width: '30px' }} /></Link></li>
             </ul>
             <div className="currentDate">
               <span><img src="../assets/img/calender.png" alt="" /></span>

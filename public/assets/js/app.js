@@ -17536,7 +17536,7 @@
           x = 0;
         }
         
-        imgSliderContainer.setAttribute("class", "img-hover mt:20px ".concat(classesArray[x]));
+        imgSliderContainer.setAttribute("class", "img-hover ".concat(classesArray[x]));
         x++;
       }, 4000);
       imgSliderContainer.addEventListener('mouseenter', function () {
@@ -17548,7 +17548,7 @@
             x = 0;
           }
           
-          imgSliderContainer.setAttribute("class", "img-hover mt:20px ".concat(classesArray[x]));
+          imgSliderContainer.setAttribute("class", "img-hover ".concat(classesArray[x]));
           x++;
         }, 4000);
       });

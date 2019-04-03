@@ -14819,10 +14819,11 @@ iframe.uk-cover {
           align-items: center; }
 
 .logo {
-  width: 25%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain; }
+  width: 100px;
+  height:100px;
+  /* -o-object-fit: contain;
+     object-fit: contain;  */
+    }
   @media only screen and (max-width: 37.5em) {
     .logo {
       width: 40%; } }
@@ -14977,7 +14978,8 @@ body {
 .dContainer {
   width: 90%;
   margin: 0 auto;
-  padding-top: 20px; }
+  /* padding-top: 20px;  */
+}
 
 .img-hover {
   display: -webkit-box;
