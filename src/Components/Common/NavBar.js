@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 export default class NavBar extends Component {
   render() {
@@ -11,15 +11,15 @@ export default class NavBar extends Component {
           <div className="main-container">
             <div className="uk-navbar-left">
               <ul className="uk-navbar-nav">
-                <li className={here == '/' ? "uk-active" : null}><Link to="/" >Home</Link></li>
-                <li className={here == '/about' ? "uk-active" : null}><Link to="/about">About Us</Link></li>
-                {/* <li className={here == '/' ? "uk-active" : null}><Link to="/documents">Documents</Link></li> */}
-                {/* <li className={here == '/' ? "uk-active" : null}><Link to="/tender">Tenders</Link></li> */}
-                <li className={here == '/e-procurement' ? "uk-active" : null}><Link to="/e-procurement">e-Procurement</Link></li>
-                {/* <li className={here == '/' ? "uk-active" : null}><Link to="/open-contracting">Open Contracting</Link></li> */}
-                {/* <li className={here == '/' ? "uk-active" : null}><Link to="/media">Media</Link></li> */}
-                {/* <li className={here == '/' ? "uk-active" : null}><Link to="/">More</Link></li> */}
-                {/* <li className={here == '/' ? "uk-active" : null}><Link to="/contact">Contact</Link></li> */}
+                <li><NavLink activeClassName="uk-active"exact={true}  to="/">Home</NavLink></li>
+                <li><NavLink activeClassName="uk-active"exact={true}  to="/about">About Us</NavLink></li>
+                <li><NavLink activeClassName="uk-active"exact={true}  to="#">Documents (Downloads)</NavLink></li>
+                <li><NavLink activeClassName="uk-active"exact={true}  to="#">Tenders</NavLink></li>
+                <li><NavLink activeClassName="uk-active"exact={true}  to="/mandate">Mandate</NavLink></li>
+                <li><NavLink activeClassName="uk-active"exact={true}  to="/e-procurement">E-Procurement</NavLink></li>
+                <li><NavLink activeClassName="uk-active"exact={true}  to="#">Media</NavLink></li>
+                <li><NavLink activeClassName="uk-active"exact={true}  to="#">More</NavLink></li>
+                <li><NavLink activeClassName="uk-active"exact={true}  to="#">Contact</NavLink></li>
               </ul>
               <button className="uk-navbar-toggle" data- uk-toggle="target: #sidenav" data-uk-icon="icon: menu" />
             </div>

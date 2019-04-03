@@ -15520,6 +15520,6 @@ a:hover {
   color: #ffffff;
 }
 
-.uk-nav li > a.uk-active{
+.uk-nav li > a.uk-active,.uk-navbar-nav li > a.uk-active {
   color: #6dffad;
 }
