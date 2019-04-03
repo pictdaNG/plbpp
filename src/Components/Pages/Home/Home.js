@@ -37,7 +37,7 @@ export default class Home extends Component {
           if (x===3){
             x = 0
           }
-          imgSliderContainer.setAttribute("class", `img-hover mt:20px ${classesArray[x]}`);
+          imgSliderContainer.setAttribute("class", `img-hover ${classesArray[x]}`);
           x++;
         },4000);
       });
