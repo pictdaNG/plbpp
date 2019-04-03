@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import CopyRight from './CopyRight';
 
 export default class Footer extends Component {
   render() {
@@ -11,15 +12,18 @@ export default class Footer extends Component {
         <div className="footer-nav">
           <h5 className="footer-title">CATEGORIES</h5>
           <ul className="uk-list uk-list-bullet">
-            <li>Download</li>
-            <li>Functions And Powers</li>
-            <li>PLPPA</li>
+            <li>Home</li>
+            <li>About Us</li>
             <li>Mandate</li>
+            <li>Law</li>
+            <li>Guidelines</li>
+            <li>Tenders</li>
             <li>News and Event</li>
-            <li>Procurement Guidelines</li>
-            <li>Procurement Law</li>
-            <li>Standard Bid Documents</li>
-            <li>Tender</li>
+            <li>Awards</li>
+            <li>Documents (Downloads)</li>
+            <li>Frequently Ask Questions</li>
+            <li>Training/Workshop</li>
+            <li>Contact Us</li>
           </ul>
         </div>
         <div className="footer-nav">
@@ -39,9 +43,7 @@ export default class Footer extends Component {
             </Link>
           </div>
         </div>
-        <div className="subfooter">
-          <span>Copyright &copy; All right reserved. | Designed by PLPPA IT Department </span>
-        </div>
+        <CopyRight />
       </footer>
     )
   }
