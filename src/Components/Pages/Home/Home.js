@@ -137,6 +137,7 @@ export default class Home extends Component {
                 </div>
                 <div className="uk-flex uk-flex-middle">
                   <div className="uk-card-body">
+                    <h3>History</h3>
                     <p>The wind of change in public procurement that guarantees transparency, accountability, competition and cost effectiveness was imbibed by the Plateau State Government.</p>
                     <p> A Law that seeks to bring a reverse in Public procurement process was considered by the Plateau State House of assembly.</p>
                   </div>
