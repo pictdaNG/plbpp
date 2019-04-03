@@ -19,7 +19,7 @@ export default class NavBar extends Component {
                 {/* <li ><Link to="/">More</Link></li> */}
                 {/* <li ><Link to="/contact">Contact</Link></li> */}
               </ul>
-              <Link className="uk-navbar-toggle" data-uk-navbar-toggle-icon to="#"></Link>
+              <button className="uk-navbar-toggle" data- uk-toggle="target: #sidenav" data-uk-icon="icon: menu" />
             </div>
           </div>
         </nav>
