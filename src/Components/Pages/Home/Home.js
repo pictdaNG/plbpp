@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import NewsSection from './NewsSection';
 import AboutSection from './AboutSection';
 import SliderSection from './SliderSection';
