@@ -15523,3 +15523,7 @@ a:hover {
 .uk-nav li > a.uk-active,.uk-navbar-nav li > a.uk-active {
   color: #6dffad;
 }
+
+.info .title{
+  margin: 0
+}
