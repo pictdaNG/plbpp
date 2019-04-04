@@ -11,7 +11,7 @@ export default class NewsSection extends Component {
             <div className="media uk-card-media-top">
               <img src="./assets/img/event-1.png" alt="" />
             </div>
-            <div className="uk-card-body">
+            <div className="uk-card-body uk-padding-small">
               <h3 className="uk-card-title uk-text-bold">Training workshop for Procurement Officers</h3>
               <p>The Plateau State Public Sector Governance Reforms and Development Project in conjunction with Plateau State Bureau of Public Procurement organized training workshop for Procurement Officers and Accounting Officers of Ministries, Departments and Agencies of Government in September 2017.</p>
             </div>

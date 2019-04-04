@@ -82,13 +82,10 @@ export default class Eprocurement extends Component {
   
   render() {
     return (
-      <div>
-        <Header />
-        <NavBar />
+      <>
         <Summary />
         <FilterProject />
-        <Footer />
-      </div>
+      </>
     )
   }
 }

@@ -8,12 +8,9 @@ import Footer from './Common/Footer';
 class App extends Component {
   render() {
     return (
-      <div>
-        <Header />
-        <NavBar />
+      <>
         <Home />
-        <Footer />
-      </div>
+      </>
     );
   }
 }

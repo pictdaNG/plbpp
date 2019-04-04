@@ -8,11 +8,6 @@ import StandardSection from './StandardSection';
 export default class Home extends Component {
   
   componentDidMount() {
-    let date = document.querySelector('.date');
-    let current = new Date();
-    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    date.innerText = `${days[current.getDay()]}, ${months[current.getMonth()]} ${current.getDate()}, ${current.getFullYear()}`;
 // UIkit.notification('Are We Good');
   
     let imgSliderContainer = document.querySelector('.img-hover');

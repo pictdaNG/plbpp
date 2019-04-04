@@ -14789,7 +14789,7 @@ iframe.uk-cover {
   
 
 #subnav {
-  height: 110spx;
+  height: 110px;
   background: #ffffff;
   width: 100%;
   display: -webkit-box;
@@ -14829,7 +14829,8 @@ iframe.uk-cover {
 }
   @media only screen and (max-width: 37.5em) {
     .logo {
-      width: 40%; } }
+      height: 100px; }
+  }
 
 .coverImg {
   width: 55%;
@@ -14843,10 +14844,12 @@ iframe.uk-cover {
   text-transform: capitalize;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  padding: 0 10px 0 15px; }
+  padding: 0 10px 0 15px;
+}
   @media only screen and (max-width: 100em) {
     .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
-      font-size: .8rem; } }
+      font-size: .8rem; }
+  }
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
   background: #306c49; }
@@ -15011,6 +15014,9 @@ body {
       -ms-flex-preferred-size: 60%;
           flex-basis: 60%;
   margin-right: 2.5px; }
+.overlay{
+  transition: none;
+}
   .img-hover.active-1 .img-1 .overlay {
     opacity: 1;
     -webkit-transform: translate(0, 0);
@@ -15137,11 +15143,12 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end; }
   .card-with-image .smaller {
-    font-size: 1rem; }
+    font-size: .7rem; }
   .card-with-image h4 {
+    width: 80%;
     font-weight: 600;
     margin: 0 60px 0 0;
-    font-size: 1.1rem;
+    font-size: .9rem;
     border-radius: 10px;
     padding: 10px 95px 25px 20px;
     background: #4e4e4e;
@@ -15176,7 +15183,7 @@ body {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
-  @media only screen and (max-width: 100em) {
+  @media (min-width: 37.5em) and (max-width: 80em) {
     .card-with-image img {
       top: 0;
       left: 50%;
@@ -15190,7 +15197,7 @@ body {
       margin: 5px 0 0 0;
       padding: 5px 5px 5px 5px;
       width: 80%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (min-width: 37.6em) and (max-width: 56.25em) {
     .card-with-image {
       width: calc((100%)/2 - 10px); } }
   @media only screen and (max-width: 37.5em) {
@@ -15262,7 +15269,7 @@ body {
     .info .uk-card p {
       font-size: .875rem; }
     .info .uk-card .uk-card-body {
-      padding: 30px; }
+      padding: 5px; }
 
 .social {
   display: -webkit-box;
@@ -15500,3 +15507,19 @@ a:hover {
 @media (min-width: 1320px) {
   .container, .wrapper {
     max-width: 70%; } }
+
+
+.title span{
+  font-size: 1.2rem;
+}
+
+.uk-open > .uk-offcanvas-bar{
+  background: #2b6142;
+}
+.uk-navbar-toggle:hover, .uk-navbar-toggle:focus, .uk-navbar-toggle.uk-open{
+  color: #ffffff;
+}
+
+.uk-nav li > a.uk-active,.uk-navbar-nav li > a.uk-active {
+  color: #6dffad;
+}

@@ -14826,7 +14826,9 @@ iframe.uk-cover {
     }
   @media only screen and (max-width: 37.5em) {
     .logo {
-      width: 40%; } }
+      width: 40%;
+      object-fit: contain;
+    } }
 
 .coverImg {
   width: 55%;
