@@ -23,7 +23,7 @@ export default class Footer extends Component {
             <li><NavLink to="">Documents (Downloads)</NavLink></li>
             <li><NavLink to="">Frequently Ask Questions</NavLink></li>
             <li><NavLink to="">Training/Workshop</NavLink></li>*/}
-            <li><NavLink activeClassName="uk-active" exact={true} to="/contact">Contact Us</NavLink></li>
+            {/*<li><NavLink activeClassName="uk-active" exact={true} to="/contact">Contact Us</NavLink></li>*/}
           </ul>
         </div>
         <div className="footer-nav">
