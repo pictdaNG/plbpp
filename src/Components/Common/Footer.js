@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import CopyRight from './CopyRight';
 
 export default class Footer extends Component {
@@ -12,18 +12,18 @@ export default class Footer extends Component {
         <div className="footer-nav">
           <h5 className="footer-title">CATEGORIES</h5>
           <ul className="uk-list uk-list-bullet">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Mandate</li>
-            <li>Law</li>
-            <li>Guidelines</li>
-            <li>Tenders</li>
-            <li>News and Event</li>
-            <li>Awards</li>
-            <li>Documents (Downloads)</li>
-            <li>Frequently Ask Questions</li>
-            <li>Training/Workshop</li>
-            <li>Contact Us</li>
+            <li><NavLink activeClassName="uk-active" exact={true} to="/">Home</NavLink></li>
+            <li><NavLink activeClassName="uk-active" exact={true} to="/about">About Us</NavLink></li>
+            <li><NavLink activeClassName="uk-active" exact={true} to="/mandate">Mandate</NavLink></li>
+            {/*<li><NavLink to="">Law</NavLink></li>
+            <li><NavLink to="">Guidelines</NavLink></li>
+            <li><NavLink to="">Tenders</NavLink></li>*/}
+            <li><NavLink activeClassName="uk-active" exact={true} to="/news">News and Event</NavLink></li>
+            {/*<li><NavLink to="">Awards</NavLink>Awards</li>
+            <li><NavLink to="">Documents (Downloads)</NavLink></li>
+            <li><NavLink to="">Frequently Ask Questions</NavLink></li>
+            <li><NavLink to="">Training/Workshop</NavLink></li>*/}
+            <li><NavLink activeClassName="uk-active" exact={true} to="/contact">Contact Us</NavLink></li>
           </ul>
         </div>
         <div className="footer-nav">

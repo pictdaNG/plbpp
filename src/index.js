@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/css/app.css';
@@ -12,6 +13,7 @@ import Mandate from "./Components/Pages/Mandate/Mandate";
 import Footer from "./Components/Common/Footer";
 import Header from "./Components/Common/Header";
 import NavBar from "./Components/Common/NavBar";
+import News from "./Components/Pages/News/News";
 
 
 const history = createBrowserHistory();
@@ -27,6 +29,7 @@ const MyRouter = () => {
           <Route exact={true} path="/e-procurement" component={Eprocurement} />
           <Route exact={true} path="/about" component={About} />
           <Route exact={true} path="/mandate" component={Mandate} />
+          <Route exact={true} path="/news" component={News} />
         </Switch>
         <Footer/>
         <SideNav/>
