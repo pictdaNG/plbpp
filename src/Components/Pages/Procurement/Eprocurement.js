@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Header from '../../Common/Header';
-import NavBar from '../../Common/NavBar';
+// import Header from '../../Common/Header';
+// import NavBar from '../../Common/NavBar';
 import Summary from './Summary';
 import FilterProject from './FilterProject';
-import Footer from '../../Common/Footer';
+// import Footer from '../../Common/Footer';
 import Chart from 'chart.js';
 
 export default class Eprocurement extends Component {
@@ -16,8 +16,8 @@ export default class Eprocurement extends Component {
     date.innerText = `${days[current.getDay()]}, ${months[current.getMonth()]} ${current.getDate()}, ${current.getFullYear()}`;
     var ctx = document.getElementById("myChart").getContext("2d");
     var ctx2 = document.getElementById("myChart2").getContext("2d");
-    if (ctx || ctx2) {
-      var myChart = new Chart(ctx, {
+    if (ctx || ctx2) {// eslint-disable-next-line
+      var myChart = new Chart(ctx, { // eslint-disable-next-line
         type: "line",
         data: {
           labels: ["2014", "2015", "2016", "2017", "2018", "2019"],
@@ -42,8 +42,8 @@ export default class Eprocurement extends Component {
             ]
           }
         }
-      });
-      var myChart2 = new Chart(ctx2, {
+      });// eslint-disable-next-line
+      var myChart2 = new Chart(ctx2, { // eslint-disable-next-line
         type: "line",
         data: {
           labels: ["2014", "2015", "2016", "2017", "2018", "2019"],

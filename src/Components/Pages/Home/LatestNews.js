@@ -5,7 +5,6 @@ export default class LatestNews extends Component {
   render() {
     return (
       <div>
-        <div className="news">Latest News</div>
         <ul className="uk-slideshow-items">
           <li>
             <Link to="#" className="p">Training workshop for Procurement Officers</Link>
@@ -20,8 +19,8 @@ export default class LatestNews extends Component {
           </li>
         </ul>
 
-        <Link className="uk-position-center-left uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-previous uk-slideshow-item="previous"></Link>
-        <Link className="uk-position-center-right uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-next uk-slideshow-item="next"></Link>
+        <Link className="uk-position-center-left uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></Link>
+        <Link className="uk-position-center-right uk-position-small uk-hidden-hover" to="#" data-uk-slidenav-next data-uk-slideshow-item="next"></Link>
       </div>
     )
   }

@@ -2182,6 +2182,8 @@ figure {
 * + figure {
   margin-top: 20px; }
 
+
+
 /* Headings
  ========================================================================== */
 h1,
@@ -15004,7 +15006,11 @@ body {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;}
+
+.img-hover.active-1 > div.img-1 > img{
+    object-position: 0 -80px;
+}
 
 .img-hover > .img-2 {
   margin-right: 2.5px; }
@@ -15372,6 +15378,13 @@ footer {
       -webkit-flex-basis: 48%;
           -ms-flex-preferred-size: 48%;
               flex-basis: 48%; }
+
+    footer .img-links .img-link img{
+        height: 120px;
+        width: 100%;
+        object-fit: cover;
+    }
+
   footer .subfooter {
     position: absolute;
     z-index: 0;
@@ -15451,6 +15464,10 @@ a:link, a:hover, a:active, a:visited {
 
 a:hover {
   color: #306c49; }
+
+.uk-list > li > a:link,.uk-list > li > a:active, .uk-list > li > a:hover, .uk-list > li > a:visited{
+    color: #ffffff;
+}
 
 .theme-color {
   color: #279a57; }
