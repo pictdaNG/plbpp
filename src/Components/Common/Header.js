@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+
 import DateView from "./Date";
 
 export default class Header extends Component {
@@ -11,9 +11,9 @@ export default class Header extends Component {
         <nav id="topbar">
           <div className="nav-container">
             <ul>
-              <li><Link to=""><img src="../assets/img/facebook.png" alt=""/></Link></li>
-              <li><Link to=""><img src="../assets/img/twitter.png" alt=""/></Link></li>
-              <li><Link to=""><img src="../assets/img/instagram.png" alt=""/></Link></li>
+              <li><a href="//facebook.com/plateaubpp"><img src="../assets/img/facebook.png" alt=""/></a></li>
+              <li><a href="//twitter.com/plateaubpp"><img src="../assets/img/twitter.png" alt=""/></a></li>
+              <li><a href="//instagram.com/plateaustatebpp"><img src="../assets/img/instagram.png" alt=""/></a></li>
             </ul>
             <div className="currentDate">
               <span><img src="../assets/img/calender.png" alt="" /></span>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {NavLink} from 'react-router-dom';
+// import {NavLink} from 'react-router-dom';
 
 export default class NavBar extends Component {
   render() {
@@ -10,15 +10,15 @@ export default class NavBar extends Component {
           <div className="main-container">
             <div className="uk-navbar-left">
               <ul className="uk-navbar-nav">
-                <li><NavLink activeClassName="uk-active" exact={true}  to="/">Home</NavLink></li>
-                <li><NavLink activeClassName="uk-active" exact={true}  to="/about">About Us</NavLink></li>
-               {/* <li><NavLink activeClassName="uk-active"exact={true}  to="#">Documents (Downloads)</NavLink></li>
-                <li><NavLink activeClassName="uk-active"exact={true}  to="#">Tenders</NavLink></li>*/}
-                <li><NavLink activeClassName="uk-active" exact={true}  to="/mandate">Mandate</NavLink></li>
-                <li><NavLink activeClassName="uk-active" exact={true}  to="/e-procurement">E-Procurement</NavLink></li>
-                {/*<li><NavLink activeClassName="uk-active"exact={true}  to="#">Media</NavLink></li>
-                <li><NavLink activeClassName="uk-active"exact={true}  to="#">More</NavLink></li>
-                <li><NavLink activeClassName="uk-active"exact={true}  to="#">Contact</NavLink></li>*/}
+                <li><a activeClassName="uk-active" exact={true}  href="/">Home</a></li>
+                <li><a activeClassName="uk-active" exact={true}  href="/about">About Us</a></li>
+               {/* <li><a activeClassName="uk-active"exact={true}  href="#">Documents (Downloads)</a></li>
+                <li><a activeClassName="uk-active"exact={true}  href="#">Tenders</a></li>*/}
+                <li><a activeClassName="uk-active" exact={true}  href="/mandate">Mandate</a></li>
+                <li><a activeClassName="uk-active" exact={true}  href="/e-procurement">E-Procurement</a></li>
+                {/*<li><a activeClassName="uk-active"exact={true}  href="#">Media</a></li>
+                <li><a activeClassName="uk-active"exact={true}  href="#">More</a></li>
+                <li><a activeClassName="uk-active"exact={true}  href="#">Contact</a></li>*/}
               </ul>
               <button className="uk-navbar-toggle" data- uk-toggle="target: #sidenav" data-uk-icon="icon: menu" />
             </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink} from 'react-router-dom';
+
 
 export default class SideNav extends Component {
   constructor(props) {
@@ -25,15 +25,15 @@ export default class SideNav extends Component {
           </svg>*/}
         </button>
         <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-          <li><NavLink activeClassName="uk-active" exact={true} onClick={this.handleClick} to="/">Home</NavLink></li>
-          <li><NavLink activeClassName="uk-active" exact={true} onClick={this.handleClick} to="/about">About Us</NavLink></li>
-          {/* <li><NavLink activeClassName="uk-active"exact={true} onCLick={this.handleClick}  to="#">Documents (Downloads)</NavLink></li>
-                <li><NavLink activeClassName="uk-active"exact={true} onCLick={this.handleClick}  to="#">Tenders</NavLink></li>*/}
-          <li><NavLink activeClassName="uk-active" exact={true} onClick={this.handleClick}  to="/mandate">Mandate</NavLink></li>
-          <li><NavLink activeClassName="uk-active" exact={true} onClick={this.handleClick}  to="/e-procurement">E-Procurement</NavLink></li>
-          {/*<li><NavLink activeClassName="uk-active"exact={true} onCLick={this.handleClick}  to="#">Media</NavLink></li>
-                <li><NavLink activeClassName="uk-active"exact={true} onCLick={this.handleClick}  to="#">More</NavLink></li>
-                <li><NavLink activeClassName="uk-active"exact={true} onCLick={this.handleClick}  to="#">Contact</NavLink></li>*/}
+          <li><a activeClassName="uk-active" exact={true} onClick={this.handleClick} href="/">Home</a></li>
+          <li><a activeClassName="uk-active" exact={true} onClick={this.handleClick} href="/about">About Us</a></li>
+          {/* <li><a activeClassName="uk-active"exact={true} onCLick={this.handleClick}  href="#">Documents (Downloads)</a></li>
+                <li><a activeClassName="uk-active"exact={true} onCLick={this.handleClick}  href="#">Tenders</a></li>*/}
+          <li><a activeClassName="uk-active" exact={true} onClick={this.handleClick}  href="/mandate">Mandate</a></li>
+          <li><a activeClassName="uk-active" exact={true} onClick={this.handleClick}  href="/e-procurement">E-Procurement</a></li>
+          {/*<li><a activeClassName="uk-active"exact={true} onCLick={this.handleClick}  href="#">Media</a></li>
+                <li><a activeClassName="uk-active"exact={true} onCLick={this.handleClick}  href="#">More</a></li>
+                <li><a activeClassName="uk-active"exact={true} onCLick={this.handleClick}  href="#">Contact</a></li>*/}
         </ul>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export default class NewsSection extends Component {
   render() {
@@ -43,7 +43,7 @@ export default class NewsSection extends Component {
           </div>
         </div>
         <div className="uk-width-1-1@s uk-flex  uk-flex-center mt:40px">
-          <Link to="#" className="btn">LOAD MORE</Link>
+          <a href="!#" className="btn">LOAD MORE</a>
         </div>
       </div>
     )

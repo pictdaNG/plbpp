@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
 
 export default class AboutSection extends Component {
   render() {
@@ -31,7 +31,7 @@ export default class AboutSection extends Component {
             </div>
           </div>
         </div>
-        <Link to="#" className="btn">READ MORE</Link>
+        <a href="!#" className="btn">READ MORE</a>
       </div>
     )
   }
